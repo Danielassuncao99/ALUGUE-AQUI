@@ -1,81 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
-    <title>Aluguel de Eletrônicos</title>
 </head>
-
 <body>
-    <header>
-        <div class="logo-menu">
-            <div class="logo">
-                <span>Logo</span>
-            </div>
-            <div class="menu-dropdown">
-                <button class="menu-button" onclick="toggleMenu()">Menu &#9662;</button>
-                <ul class="submenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="search-bar">
-            <img src="/assets/search.svg" alt="Search Icon" class="search-icon">
-            <input type="text" placeholder="O que você procura?" class="search-input">
-        </div>
-        <div class="top-nav">
-            <div class="user-actions">
-                <a href="#">
-                    <img src="/assets/icon-account.svg" alt="User Icon">
-                </a>
-                <a href="#">
-                    <img src="/assets/icon-cart.svg" alt="Cart Icon">
-                </a>
-                <a href="#"><span>Devoluções<br>e Pedidos</span></a>
-            </div>
-        </div>
-    </header>
+    
+    <div class="card">
 
-    <section class="banner">
-        <h1>SMARTPHONE DE ÚLTIMA GERAÇÃO</h1>
-        <p>Explore a inovação com os melhores smartphones das marcas mais renomadas.</p>
-        <input type="button" value="CONFIRA">
-    </section>
-    <div class="services-subtitle">
-        <h2>COMO FUNCIONA?</h2>
-    </div>
-    <div class="about">
-        <div class="solution">
-            <img src="assets/solucao.svg" alt="Solução">
-            <div class="solution-text">
-                <h2>PASSO 1</h2>
-                <span>Escolha os produtos que deseja alugar.</span>
-            </div>
-        </div>
-        <div class="solution">
-            <img src="assets/plataforma.svg" alt="Plataforma">
-            <div class="solution-text">
-                <h2>PASSO 2</h2>
-                <span>Adicione ao carrinho e prossiga para o pagamento.</span>
-            </div>
-        </div>
-        <div class="solution">
-            <img src="assets/sucesso.svg" alt="Focado em">
-            <div class="solution-text">
-                <h2>PASSO 3</h2>
-                <span>Receba os produtos na sua porta e aproveite!</span>
-            </div>
-        </div>
-    </div>
+   
 
-    <div class="services-subtitle">
-        <h2>PRODUTOS RECENTES</h2>
-    </div>
+        <form action="">
+            
+            <h2>Entre aqui</h2>
 
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="" id="" required>
+                <label for="">Email:</label>
+            </div>
+
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="" id="" required>
+                <label for="">Senha:</label>
+            </div>
+
+            <div class="forget">
+                <label for="">
+                    <input type="checkbox">Salvar
+                </label>
+                <label for="">
+                    Esqueceu a senha
+                </label>
+            </div>
+            <button> Log In</button>
+            
+
+            <div class="register">
+                <p>Não tem uma conta? <a href="">Registrar</a></p>
+            </div>
+        </form>
+    </div>
 
 </body>
 </html>
