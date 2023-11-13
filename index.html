@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aluguel de Eletrônicos</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-menu">
+            <div class="logo">
+                <span>Logo</span>
+            </div>
+            <div class="menu-dropdown">
+                <button class="menu-button" onclick="toggleMenu()">Menu &#9662;</button>
+                <ul class="submenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-bar">
+            <img src="/assets/search.svg" alt="Search Icon" class="search-icon">
+            <input type="text" placeholder="O que você procura?" class="search-input">
+        </div>
+        <div class="top-nav">
+            <div class="user-actions">
+                <a href="#">
+                    <img src="/assets/icon-account.svg" alt="User Icon">
+                </a>
+                <a href="#">
+                    <img src="/assets/icon-cart.svg" alt="Cart Icon">
+                </a>
+                <a href="#"><span>Devoluções<br>e Pedidos</span></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1>Aluguel de Eletrônicos</h1>
+        <p>Explore nossa ampla seleção de produtos eletrônicos para aluguel e facilite seu dia a dia.</p>
+    </section>
+
+    <section class="featured-products">
+        <h2>Produtos em Destaque</h2>
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Nome do Produto 1</h3>
+            <p>Descrição breve do produto.</p>
+            <button>Alugar</button>
+        </div>
+        <!-- Adicione mais cards de produtos conforme necessário -->
+    </section>
+
+    <section class="how-it-works">
+        <h2>Como Funciona</h2>
+        <div class="step">
+            <img src="step1-icon.png" alt="Passo 1">
+            <p>Escolha os produtos que deseja alugar.</p>
+        </div>
+        <div class="step">
+            <img src="step2-icon.png" alt="Passo 2">
+            <p>Adicione ao carrinho e prossiga para o pagamento.</p>
+        </div>
+        <div class="step">
+            <img src="step3-icon.png" alt="Passo 3">
+            <p>Receba os produtos na sua porta e aproveite!</p>
+        </div>
+    </section>
+
+    <script>
+        // Coloque aqui o conteúdo do seu script.js
+        function toggleMenu() {
+            // Lógica para mostrar/ocultar o menu
+            var submenu = document.querySelector('.submenu');
+            submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

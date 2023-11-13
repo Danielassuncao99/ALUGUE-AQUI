@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, #312ebb, #282596, #0e0d35, #0e0d35);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+
+.logo-menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 75px;
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.menu-dropdown {
+    position: relative;
+}
+
+.menu-button {
+    margin-left: 30px;
+    margin-right: 182px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px;
+    background-color: black;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.menu-dropdown:hover .submenu {
+    display: block;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 73px;
+}
+
+.user-actions a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.user-actions img {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 16px;
+    height: 14px;
+    margin-right: 8px; /* Espaçamento entre a imagem e o texto do input */
+}
+
+.search-bar input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(217, 217, 217, 83%);
+    padding: 5px;
+    font-weight: 500;
+    outline: none;
+}
+
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 61%);
+}
+
+.user-actions span {
+    display: block;
+}
+
+.search-bar img{
+
+}
